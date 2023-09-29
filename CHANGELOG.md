@@ -1,3 +1,7 @@
+### 2.0.1 [2023-09-29]
+- Remove package lockfile
+- Update package keywords
+
 ### 2.0.0 [2023-09-29]
 - (BC BREAK) Variant changed from `~:` to `-:`
 - Added support for additional levels of unimportance
