@@ -1,1 +1,8 @@
-node_modules
+*
+!src
+!.gitignore
+!CHANGELOG.md
+!LICENSE
+!package.json
+!package-lock.json
+!README.md
