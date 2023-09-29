@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-unimportant",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adds lower specificity tailwindcss utility classes to be used in components",
   "main": "src/index.js",
   "peerDependencies": {
