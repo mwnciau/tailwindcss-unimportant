@@ -17,6 +17,16 @@ module.exports = {
 }
 ```
 
+Note: if you need to specify the `important` option in your tailwind
+configuration, you will need to pass it in as an option to the plugin.
+
+```js
+// tailwind.config.js
+module.exports = {
+  plugins: [require('tailwindcss-unimportant')({ important: '[my-custom-selector]' })],
+}
+```
+
 ## Getting started
 
 To make a class unimportant, use the `-:` variant.
