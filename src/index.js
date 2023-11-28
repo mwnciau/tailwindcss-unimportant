@@ -1,6 +1,6 @@
 const plugin = require("tailwindcss/plugin");
 
-const unimportant = plugin(
+const unimportant = plugin.withOptions(() =>
     ({ matchVariant }) => {
         matchVariant(
             '-',
@@ -39,7 +39,7 @@ const unimportant = plugin(
             },
         );
     },
-    {important: ':root'}
+    (options) => ({important: options?.important ?? ':root'})
 );
 
 module.exports = unimportant;

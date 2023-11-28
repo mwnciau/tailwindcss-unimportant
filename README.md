@@ -138,6 +138,10 @@ option to `:root`. This increases the specificity of all Tailwind classes by
 0-1-0, meaning our unimportant classes now have a higher specificity than the
 base rules.
 
+If you need to specify your own `important` configuration, you can pass it into
+the plugin, e.g.
+`require('tailwindcss-unimportant')({ important: '[my-custom-selector]' })`.
+
 ```html
 <style>
 /* Specificity of 0-0-1 */
