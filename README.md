@@ -17,6 +17,16 @@ module.exports = {
 }
 ```
 
+Note: if you need to specify the `important` option in your tailwind
+configuration, you will need to pass it in as an option to the plugin.
+
+```js
+// tailwind.config.js
+module.exports = {
+  plugins: [require('tailwindcss-unimportant')({ important: '[my-custom-selector]' })],
+}
+```
+
 ## Getting started
 
 To make a class unimportant, use the `-:` variant.
@@ -137,10 +147,6 @@ To fix this problem, the plugin sets the `important` Tailwind configuration
 option to `:root`. This increases the specificity of all Tailwind classes by
 0-1-0, meaning our unimportant classes now have a higher specificity than the
 base rules.
-
-If you need to specify your own `important` configuration, you can pass it into
-the plugin, e.g.
-`require('tailwindcss-unimportant')({ important: '[my-custom-selector]' })`.
 
 ```html
 <style>
