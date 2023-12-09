@@ -1,11 +1,11 @@
-# `tailwind-unimportant`
+# `tailwindcss-unimportant`
 A [Tailwind CSS] plugin that creates lower-specificity utility classes that can
 be used to create components with overridable defaults.
 
 ## Installation
 
 ```sh
-npm install tailwind-unimportant
+npm install tailwindcss-unimportant
 ```
 
 Add the `tailwindcss-unimportant` plugin to your `tailwind.config.js` file.
