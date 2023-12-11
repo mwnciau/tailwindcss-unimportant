@@ -1,3 +1,6 @@
+### 2.1.1 [2023-12-11]
+- Fix package name in readme (#2)
+
 ### 2.1.0 [2023-11-28]
 - Add option to set custom important config option (#1)
 
